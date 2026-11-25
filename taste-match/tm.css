@@ -1,0 +1,31 @@
+/* Taste Match pages: same tokens as the app (src/components/theme.ts). Loaded after ../assets/site.css. */
+@font-face { font-family: "Bricolage"; font-weight: 400; font-display: swap; src: url("fonts/BricolageGrotesque_400Regular.ttf") format("truetype"); }
+@font-face { font-family: "Bricolage"; font-weight: 600; font-display: swap; src: url("fonts/BricolageGrotesque_600SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Bricolage"; font-weight: 800; font-display: swap; src: url("fonts/BricolageGrotesque_800ExtraBold.ttf") format("truetype"); }
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #f3f7fc;
+  --border: #dfe5ed;
+  --text: #0f1926;
+  --muted: #525f6f;
+  --accent: #006bdf;
+  --accent-deep: #0049ae;
+  --ink: #ffffff;
+  --lime: #c6fb50;
+}
+body { background: var(--bg); color: var(--text); font-family: "Bricolage", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+h1, h2 { font-weight: 800; letter-spacing: -0.02em; text-wrap: balance; }
+a { color: var(--accent); }
+.hero img { border-radius: 16px; }
+.band { background: var(--accent); color: #fff; border-radius: 16px; padding: 24px; margin: 24px 0; }
+.band h1, .band p { color: #fff; margin: 0 0 12px; }
+.band .muted { color: #fff; }
+.pill { background: var(--accent); color: #fff; }
+.band .pill { background: #fff; color: var(--accent); }
+.band .pill.off { background: transparent; color: #fff; border: 1.5px solid #fff; }
+.card { background: var(--surface); border: 0; }
+.chip { display: inline-block; background: var(--lime); color: var(--text); font-weight: 600; border-radius: 999px; padding: 6px 12px; margin: 4px 4px 0 0; }
+.code { color: var(--text); }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; border-bottom: 1px solid var(--border); padding: 8px 6px; vertical-align: top; }
